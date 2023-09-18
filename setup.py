@@ -1,7 +1,7 @@
 from glob import glob
 from setuptools import setup, Extension
 
-version = "0.4.1"
+version = "0.4.2"
 
 
 def readme():
@@ -14,7 +14,7 @@ sources = glob("*.pyx") + glob("src/*.c")
 libraries = ["dl"]
 
 setup(
-    name="greenify",
+    name="greenify-elephant-fork",
     version=version,
     description="Make C module compatible with gevent at runtime.",
     long_description=readme(),
