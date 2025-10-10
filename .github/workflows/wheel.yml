@@ -23,3 +23,7 @@ jobs:
       run: rm dist/*-linux_x86_64.whl
     - name: Check build result
       run: ls -lh dist/
+    - uses: actions/upload-artifact@v4
+      with:
+        name: dist
+        path: dist/
